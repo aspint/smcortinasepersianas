@@ -18,7 +18,13 @@
     <script src="js/html5shiv.js"></script>
     <script src="js/respond.min.js"></script>
   <![endif]-->
-  
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-193177440-1');
+  </script>
   <link href='http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700' rel='stylesheet' type='text/css'>
   <link rel="shortcut icon" href="images/logo/incon.jpg">
 </head><!--/head-->
@@ -817,7 +823,8 @@
         </div>
       </div>
     </div> -->
-    <a href="https://api.whatsapp.com/send?phone=5531999163322&text=Olá!%20Encontrei%20seu%20site%20na%20Internet%20e%20preciso%20de%20seus%20serviços.%20Pode%20me%20ajudar?" class="float" target="_blank">
+    <a href="https://api.whatsapp.com/send?phone=5531999163322&text=Olá!%20Encontrei%20seu%20site%20na%20Internet%20e%20preciso%20de%20seus%20serviços.%20Pode%20me%20ajudar?"  
+    class="float" target="_blank" onclick="goog_report_conversion('https://api.whatsapp.com/send?phone=5531999163322&text=Olá!%20Encontrei%20seu%20site%20na%20Internet%20e%20preciso%20de%20seus%20serviços.%20Pode%20me%20ajudar?')">
       <i class="fa fa-whatsapp my-float"></i>
     </a>
   </footer>
