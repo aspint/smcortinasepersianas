@@ -1,12 +1,16 @@
 var dados = [
-    {'name':'Rolô', 'description':'Persianas Rolo','img':'images/galeria/img-01.jpg'},
-    {'name':'Rolô', 'description':'Persianas Rolo','img':'images/galeria/img-02.jpg'},
-    {'name':'Rolô', 'description':'Persianas Rolo','img':'images/galeria/img-03.jpg'},
-    {'name':'Rolô', 'description':'Persianas Rolo','img':'images/galeria/img-04.jpg'},
-    {'name':'Rolô', 'description':'Persianas Rolo','img':'images/galeria/img-05.jpg'},
+    {'name':'Persiana celular', 'description':'Melhore a luminosidade de seu ambiente','img':'images/galeria/img-01.jpg'},
+    {'name':'Rollo', 'description':'Persianas Rolo','img':'images/galeria/img-03.jpg'},
+    {'name':'Rollo', 'description':'Persianas Rolo','img':'images/galeria/img-05.jpg'},
     {'name':'Rolô', 'description':'Persianas Rolo','img':'images/galeria/img-06.jpg'},
-    {'name':'Rolô', 'description':'Persianas Rolo','img':'images/galeria/img-08.jpg'},
-    {'name':'Rolô', 'description':'Persianas Rolo','img':'images/galeria/img-09.jpg'}
+    {'name':'Rolô', 'description':'Persianas Rolo','img':'images/galeria/img-10.jpg'},
+    {'name':'Rolô', 'description':'Persianas Rolo','img':'images/galeria/img-12.jpg'},
+    {'name':'Rolô', 'description':'Persianas Rolo','img':'images/galeria/img-13.jpg'},
+    {'name':'Rolô', 'description':'Persianas Rolo','img':'images/galeria/img-14.jpg'},
+    {'name':'Rolô', 'description':'Persianas Rolo','img':'images/galeria/img-21.jpg'},
+    {'name':'Rolô', 'description':'Persianas Rolo','img':'images/galeria/img-22.jpg'},
+    {'name':'Rolô', 'description':'Persianas Rolo','img':'images/galeria/img-23.jpg'},
+    {'name':'Rolô', 'description':'Persianas Rolo','img':'images/galeria/img-24.jpg'}
 ]
 
 
