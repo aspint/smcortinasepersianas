@@ -4,7 +4,7 @@ $from       = @trim(stripslashes($_POST['email']));
 $subject    = @trim(stripslashes($_POST['subject'])); 
 $tel        = @trim(stripslashes($_POST['tel']));
 $message    = @trim(stripslashes($_POST['message'])); 
-$to   		= 'comercial@smcortinasepersianas.com.br';//replace with your email
+$to   		= 'arthur@gmail.com';//replace with your email
 
 $headers   = array();
 $headers[] = "MIME-Version: 1.0";
