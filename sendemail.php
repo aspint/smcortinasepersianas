@@ -1,13 +1,10 @@
 <?php
-
-
-FORMULARIO ANTIGO
 $name       = @trim(stripslashes($_POST['name'])); 
 $from       = @trim(stripslashes($_POST['email'])); 
 $subject    = @trim(stripslashes($_POST['subject'])); 
 $tel        = @trim(stripslashes($_POST['tel']));
 $message    = @trim(stripslashes($_POST['message'])); 
-$to   		= 'arthursoares.comercial@gmail.com';//replace with your email
+$to   		= 'arthur@gmail.com';//replace with your email
 
 $headers   = array();
 $headers[] = "MIME-Version: 1.0";
@@ -20,4 +17,3 @@ $headers[] = "X-Mailer: PHP/".phpversion();
 mail($to, $subject, $message+' /n Telefone: '+$tel, $headers);
 
 die;
-
