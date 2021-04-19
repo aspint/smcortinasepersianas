@@ -7,8 +7,8 @@ var dados = [
     {'name':'Rolô', 'description':'Persianas Rolo','img':'images/galeria/img-12.jpg'},
     {'name':'Rolô', 'description':'Persianas Rolo','img':'images/galeria/img-13.jpg'},
     {'name':'Rolô', 'description':'Persianas Rolo','img':'images/galeria/img-14.jpg'},
-    {'name':'Rolô', 'description':'Persianas Rolo','img':'images/galeria/img-21.jpg'},
-    {'name':'Rolô', 'description':'Persianas Rolo','img':'images/galeria/img-22.jpg'},
+    {'name':'Rolô', 'description':'Persianas Rolo','img':'images/galeria/img-28.jpg'},
+    {'name':'Rolô', 'description':'Persianas Rolo','img':'images/galeria/img-27.jpg'},
     {'name':'Rolô', 'description':'Persianas Rolo','img':'images/galeria/img-23.jpg'},
     {'name':'Rolô', 'description':'Persianas Rolo','img':'images/galeria/img-24.jpg'}
 ]
