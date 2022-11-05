@@ -750,16 +750,20 @@
         <div class="contact-form wow fadeIn" data-wow-duration="1000ms" data-wow-delay="600ms">
           <div class="row">
             <div class="col-sm-6">
-              <form id="main-contact-form" name="contact-form" method="post" action="/sendemail.php">
+              <form id="main-contact-form" name="contact-form" method="post" action="http://formmail.uni5.net/formmail.cgi">
+                <input type="hidden" name="recipient" value="arthursoares.comercial@gmail.com"> <!-- Pode ser qualquer endereço de email -->
+                <input type="hidden" name="redirect" value="https://smcortinasepersianas.com.br/"> <!-- Após o envio, o usuário será redirecionado para a página configurada aqui -->
+                <input type="hidden" name="subject" value="orçamento">  <!-- Assunto da mensagem -->
+                <input type="hidden" name="email" value="formweb@smcortinasepersianas.com.br">   <!-- Deve ser uma conta de email ativa em seu domínio -->
                 <div class="row  wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="300ms">
                   <div class="col-sm-6">
                     <div class="form-group">
-                      <input type="text" name="name" class="form-control" placeholder="Nome" required="required">
+                      <input type="text" name="nome" class="form-control" placeholder="Nome" required="required">
                     </div>
                   </div>
                   <div class="col-sm-6">
                     <div class="form-group">
-                      <input type="email" name="email" class="form-control" placeholder="Email" required="required">
+                      <input type="email" name="replyto" class="form-control" placeholder="Email" required="required">
                     </div>
                   </div>
                 </div>
@@ -770,10 +774,12 @@
                   <input type="text" name="subject" class="form-control" placeholder="Assunto" required="required">
                 </div>
                 <div class="form-group">
-                  <textarea name="message" id="message" class="form-control" rows="4" placeholder="Mensagem" required="required"></textarea>
+                  <textarea name="Comentarios" id="message" class="form-control" rows="4" placeholder="Mensagem" required="required"></textarea>
                 </div>                        
                 <div class="form-group">
-                  <button type="submit" class="btn-submit">Enviar</button>
+                  <!-- <button type="submit" class="btn-submit">Enviar</button> -->
+                  <input type="submit" class="btn-submit" name="BTEnvia" value="Enviar"> 
+                  <!-- <input type="reset"  class="btn-submit" name="BTApaga" value="Apagar">  -->
                 </div>
               </form>   
             </div>
