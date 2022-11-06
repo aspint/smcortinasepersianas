@@ -11,7 +11,7 @@ $from       = @trim(stripslashes($_POST['email']));
 $subject    = @trim(stripslashes($_POST['subject'])); 
 $tel        = @trim(stripslashes($_POST['tel']));
 $message    = @trim(stripslashes($_POST['message'])); 
-$to   		= 'arthursoares.comercial@gmail.com';//replace with your email
+$to   		= 'formweb@smcortinasepersianas.com.br';//replace with your email
 
 $headers   = array();
 $headers[] = "MIME-Version: 1.0";
@@ -21,7 +21,7 @@ $headers[] = "Reply-To: <{$from}>";
 $headers[] = "Subject: {$subject}";
 $headers[] = "X-Mailer: PHP/".phpversion();
 
-$headers = implode("\r\n", $headers);
+$headers = implode("\r\n", $headers);z
 mail($to, $subject, $message+" /n Telefone: "+$tel, $headers);
 
 die;
