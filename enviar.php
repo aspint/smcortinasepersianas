@@ -1,6 +1,6 @@
 <?php
  // Adiciona o arquivo class.phpmailer.php - você deve especificar corretamente o caminho da pasta com o este arquivo.
- require_once("./phpmailer/PHPMailerAutoload.php");
+ require_once("PHPMailerAutoload.php");
  // Inicia a classe PHPMailer
  $mail = new PHPMailer();
  // DEFINIÇÃO DOS DADOS DE AUTENTICAÇÃO - Você deve alterar conforme o seu domínio!
