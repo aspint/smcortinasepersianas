@@ -28,9 +28,9 @@
  $email = $_POST['email'];
  $mail->Subject  = "Formulário de Contato"; // Assunto da mensagem
  $mail->Body = $_POST['name'] ; //." <br>"; // Texto da mensagem
- $mail->Body .= " E-mail: ".$_POST['email'].""; // Texto da mensagem
- $mail->Body .= $mail." Assunto: ".$_POST['subject'].""; // Texto da mensagem
- $mail->Body .= " Mensagem: ".nl2br($_POST['message+']).""; // Texto da mensagem
+ $mail->Body .= " E-mail: ".$_POST['email']."<br>"; // Texto da mensagem
+ $mail->Body .= " Assunto: ".$_POST['subject']."<br>"; // Texto da mensagem
+ $mail->Body .= " Mensagem: ".nl2br($_POST['message+'])."<br>"; // Texto da mensagem
  // ENVIO DO EMAIL
  $enviado = $mail->Send();
  // Limpa os destinatários e os anexos
