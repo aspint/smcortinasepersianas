@@ -29,7 +29,7 @@
  $mail->Body = " Nome: ".$_POST['name'] . "<br>"; //." <br>"; // Texto da mensagem
  $mail->Body .= " E-mail: ".$_POST['email']."<br>"; // Texto da mensagem
  $mail->Body .= " Assunto: ".$_POST['subject']."<br>"; // Texto da mensagem
- $mail->Body .= " Mensagem: ".nl2br($_POST['message+'])."<br>"; // Texto da mensagem
+ $mail->Body .= " Mensagem: ".nl2br($_POST['message'])."<br>"; // Texto da mensagem
  // ENVIO DO EMAIL
  $enviado = $mail->Send();
  // Limpa os destinatários e os anexos
