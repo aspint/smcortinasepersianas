@@ -786,7 +786,7 @@
                 <div class="form-group">
                   <div class="g-recaptcha"  id="rcaptcha"  data-callback="get_action" data-sitekey="6LewBuQiAAAAAOWpodDQjUdMLIz8RGrP1O2rHMzI"></div>
                   <span id="captcha" style="color:red"></span> 
-                  <button it="btn-envio" type="submit" class="btn-submit" style="background-color: black;" onClick="validaCaptcha()"disabled="disabled"> Enviar</button>
+                  <button id="btn-envio" type="submit" class="btn-submit" style="background-color: black;" onClick="validaCaptcha()"disabled="disabled"> Enviar</button>
                 </div>
               </form>  
             </div>
@@ -890,8 +890,8 @@
     else
     {
         document.getElementById('captcha').innerHTML="Captcha completed";
-        button.disabled = false;
-        button.style.background=""
+        button .disabled = false;
+        button.style.background="";
         return true; 
     }
   }
