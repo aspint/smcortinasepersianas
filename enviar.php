@@ -34,12 +34,13 @@
  // ENVIO DO EMAIL
  $enviado = $mail->Send();
  // Limpa os destinatários e os anexos
- $mail->ClearAllRecipients();
+ //$mail->ClearAllRecipients();
  // Exibe uma mensagem de resultado do envio (sucesso/erro)
  if ($enviado) {
   $mail->AddAddress($_POST['email'],$_POST['name'] );
   $mail->Body = " Email recebido, em breve entraremos em contato"; //." <br>"; // Texto da mensagem
   $mail->Send();
+  $mail->ClearAllRecipients();
    //echo "E-mail enviado com sucesso!";
    header('Location: https://www.smcortinasepersianas.com.br/');
  } else {
