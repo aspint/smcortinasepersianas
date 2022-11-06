@@ -1,6 +1,6 @@
 <?php
  // Adiciona o arquivo class.phpmailer.php - você deve especificar corretamente o caminho da pasta com o este arquivo.
- require_once("./envioMail/PHPMailerAutoload.php");
+ require_once("envioMail/PHPMailerAutoload.php");
  // Inicia a classe PHPMailer
  $mail = new PHPMailer();
  // DEFINIÇÃO DOS DADOS DE AUTENTICAÇÃO - Você deve alterar conforme o seu domínio!
@@ -32,7 +32,7 @@
 "; // Texto da mensagem
  $mail->Body .= " Assunto: ".$_POST['subject']."
 "; // Texto da mensagem
- $mail->Body .= " Mensagem: ".nl2br($_POST['message'])."
+ $mail->Body .= " Mensagem: ".nl2br($_POST['message+'])."
 "; // Texto da mensagem
  // ENVIO DO EMAIL
  $enviado = $mail->Send();
