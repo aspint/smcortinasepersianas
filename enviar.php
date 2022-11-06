@@ -37,7 +37,7 @@
  // Exibe uma mensagem de resultado do envio (sucesso/erro)
  if ($enviado) {
    echo "E-mail enviado com sucesso!";
-   sleep(2);
+   sleep(4);
    header('Location: https://www.smcortinasepersianas.com.br/');
  } else {
    echo "Não foi possível enviar o e-mail.";
