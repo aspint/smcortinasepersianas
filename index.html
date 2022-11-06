@@ -784,9 +784,9 @@
                   <textarea name="message" id="message" class="form-control" rows="4" placeholder="Mensagem" required="required"></textarea>
                 </div>                        
                 <div class="form-group">
-                  <div class="g-recaptcha"  id="rcaptcha"  data-sitekey="6LewBuQiAAAAAOWpodDQjUdMLIz8RGrP1O2rHMzI"></div>
-                  <button type="submit" class="btn-submit">Enviar</button>
+                  <div class="g-recaptcha"  id="rcaptcha"  data-callback="get_action" data-sitekey="6LewBuQiAAAAAOWpodDQjUdMLIz8RGrP1O2rHMzI"></div>
                   <span id="captcha" style="color:red"></span> 
+                  <button type="submit" class="btn-submit" >Enviar</button>
                 </div>
               </form>  
             </div>
@@ -876,7 +876,7 @@
       
       telefone.value = textoAjustado;
   }
-  function get_action(form) 
+  function get_action() 
   {
     var v = grecaptcha.getResponse();
     if(v.length == 0)
@@ -886,7 +886,7 @@
     }
     else
     {
-         document.getElementById('captcha').innerHTML="Captcha completed";
+        document.getElementById('captcha').innerHTML="Captcha completed";
         return true; 
     }
   }
