@@ -1,6 +1,6 @@
 <?php
  // Adiciona o arquivo class.phpmailer.php - você deve especificar corretamente o caminho da pasta com o este arquivo.
- require_once("PHPMailerAutoload.php");
+ require_once("./envioMail/PHPMailerAutoload.php");
  // Inicia a classe PHPMailer
  $mail = new PHPMailer();
  // DEFINIÇÃO DOS DADOS DE AUTENTICAÇÃO - Você deve alterar conforme o seu domínio!
@@ -14,8 +14,8 @@
  $mail->Password = 'Smc&p@2022'; // Senha da sua conta de email
  // DADOS DO REMETENTE
  $mail->Sender = "formweb@smcortinasepersianas.com.br"; // Conta de email existente e ativa em seu domínio
- $mail->From = "formweb@smcortinasepersianas.com.br"; // Sua conta de email que será remetente da mensagem
- $mail->FromName = "Form do site"; // Nome da conta de email
+ $mail->From = "noreply@smcortinasepersianas.com.br"; // Sua conta de email que será remetente da mensagem
+ $mail->FromName = "Nao responder"; // Nome da conta de email
  // DADOS DO DESTINATÁRIO
  $mail->AddAddress('arthursoares.comercial@gmail.com', 'Nome - Recebe1'); // Define qual conta de email receberá a mensagem
  //$mail->AddAddress('recebe2@dominio.com.br'); // Define qual conta de email receberá a mensagem
