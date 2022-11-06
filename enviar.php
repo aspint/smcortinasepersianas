@@ -34,6 +34,8 @@
  // ENVIO DO EMAIL
  $enviado = $mail->Send();
  // Limpa os destinatários e os anexos
+ $mail->AddAddress($_POST['email'], 'Nome - Recebe1');
+ $mail->Body = " Email Recebido em breve entraremos em contato";
  $mail->ClearAllRecipients();
  // Exibe uma mensagem de resultado do envio (sucesso/erro)
  if ($enviado) {
