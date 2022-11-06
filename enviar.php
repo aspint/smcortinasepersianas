@@ -34,7 +34,7 @@
  // ENVIO DO EMAIL
  $enviado = $mail->Send();
  // Limpa os destinatários e os anexos
- //$mail->ClearAllRecipients();
+ $mail->ClearAllRecipients();
  // Exibe uma mensagem de resultado do envio (sucesso/erro)
  if ($enviado) {
   $mail->AddAddress($_POST['email'],$_POST['name'] );
