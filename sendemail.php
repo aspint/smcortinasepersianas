@@ -21,7 +21,7 @@ $headers[] = "Reply-To: <{$from}>";
 $headers[] = "Subject: {$subject}";
 $headers[] = "X-Mailer: PHP/".phpversion();
 
-mail($to, $subject, $message+' /n Telefone: '+$tel, $headers);
+mail($to, $subject, $message+" /n Telefone: "+$tel, $headers);
 
 die;
 ?>
