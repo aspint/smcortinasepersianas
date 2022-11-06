@@ -43,6 +43,7 @@
   $mail->ClearAllRecipients();
    //echo "E-mail enviado com sucesso!";
    header('Location: https://www.smcortinasepersianas.com.br/');
+   die;
  } else {
    echo "Não foi possível enviar o e-mail.";
    echo "Detalhes do erro: " . $mail->ErrorInfo;

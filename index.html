@@ -14,8 +14,7 @@
   <link id="css-preset" href="css/presets/preset1.css" rel="stylesheet">
   <link href="css/responsive.css" rel="stylesheet">
   <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
-  <script src="https://www.google.com/recaptcha/api.js"></script>
-  <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+  <script src="https://www.google.com/recaptcha/api.js?hl=pt-BR" async defer></script>
 
   <!--[if lt IE 9]>
     <script src="js/html5shiv.js"></script>
@@ -786,7 +785,7 @@
                 <div class="form-group">
                   <div class="g-recaptcha"  id="rcaptcha"  data-callback="get_action" data-sitekey="6LewBuQiAAAAAOWpodDQjUdMLIz8RGrP1O2rHMzI"></div>
                   <span id="captcha" style="color:red"></span> 
-                  <button id="btn-envio" type="submit" class="btn-submit" style="background-color: black;" onClick="validaCaptcha()"disabled="disabled"> Enviar</button>
+                  <button id="btn-envio" type="submit" class="btn-submit" style="background-color: black;" disabled="disabled"> Enviar</button>
                 </div>
               </form>  
             </div>
@@ -895,9 +894,9 @@
         return true; 
     }
   }
-  function validaCaptcha(){
-    alert("formulario enviado, obrigado!");
-  }
+  //function validaCaptcha(){
+  //  alert("formulario enviado, obrigado!");
+  //}
   </script>
   <script type="text/javascript" src="js/jquery.js"></script>
   <script type="text/javascript" src="js/bootstrap.min.js"></script>
@@ -910,6 +909,5 @@
   <script type="text/javascript" src="js/lightbox.min.js"></script>
   <script type="text/javascript" src="js/main.js"></script>
   <script type="text/javascript" src="js/dados.js"></script>
-
 </body>
 </html>
