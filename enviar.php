@@ -35,9 +35,10 @@
  // Limpa os destinatários e os anexos
  $mail->ClearAllRecipients();
  // Exibe uma mensagem de resultado do envio (sucesso/erro)
-// if ($enviado) {
-//   echo "E-mail enviado com sucesso!";
-// } else {
-//   echo "Não foi possível enviar o e-mail.";
-//   echo "Detalhes do erro: " . $mail->ErrorInfo;
-// }
+ if ($enviado) {
+   echo "E-mail enviado com sucesso!";
+   header('Location: https://www.smcortinasepersianas.com.br/');
+ } else {
+   echo "Não foi possível enviar o e-mail.";
+   echo "Detalhes do erro: " . $mail->ErrorInfo;
+ }
