@@ -2,6 +2,8 @@
  // Adiciona o arquivo class.phpmailer.php - você deve especificar corretamente o caminho da pasta com o este arquivo.
  require_once("envioMail/PHPMailerAutoload.php");
  // Inicia a classe PHPMailer
+ $naomeCliente = $_POST['name'];
+
  $mail = new PHPMailer();
  // DEFINIÇÃO DOS DADOS DE AUTENTICAÇÃO - Você deve alterar conforme o seu domínio!
  $mail->IsSMTP(); // Define que a mensagem será SMTP
@@ -25,9 +27,8 @@
  $mail->IsHTML(true); // Define que o e-mail será enviado como HTML
  $mail->CharSet = 'utf-8'; // Charset da mensagem (opcional)
  // DEFINIÇÃO DA MENSAGEM
- $email = $_POST['email'];
  $mail->Subject  = "Formulário de Contato"; // Assunto da mensagem
- $mail->Body = " Nome: ".$_POST['name'] . "<br>"; //." <br>"; // Texto da mensagem
+ $mail->Body = " Nome: ". $naomeCliente. "<br>"; //." <br>"; // Texto da mensagem
  $mail->Body .= " E-mail: ".$_POST['email']."<br>"; // Texto da mensagem
  $mail->Body .= " Assunto: ".$_POST['subject']."<br>"; // Texto da mensagem
  $mail->Body .= " Mensagem: ".nl2br($_POST['message+'])."<br>"; // Texto da mensagem
