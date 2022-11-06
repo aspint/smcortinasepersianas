@@ -14,8 +14,8 @@
  $mail->Password = 'Smc&p@2022'; // Senha da sua conta de email
  // DADOS DO REMETENTE
  $mail->Sender = "formweb@smcortinasepersianas.com.br"; // Conta de email existente e ativa em seu domínio
- $mail->From = "noreply@smcortinasepersianas.com.br"; // Sua conta de email que será remetente da mensagem
- $mail->FromName = "Nao responder"; // Nome da conta de email
+ $mail->From = "comercial@smcortinasepersianas.com.br"; // Sua conta de email que será remetente da mensagem
+ $mail->FromName = "Conta Comercial SM Cortinas e Persianas"; // Nome da conta de email
  // DADOS DO DESTINATÁRIO
  $mail->AddAddress('arthursoares.comercial@gmail.com', 'Nome - Recebe1'); // Define qual conta de email receberá a mensagem
  //$mail->AddAddress('recebe2@dominio.com.br'); // Define qual conta de email receberá a mensagem
@@ -26,14 +26,10 @@
  $mail->CharSet = 'utf-8'; // Charset da mensagem (opcional)
  // DEFINIÇÃO DA MENSAGEM
  $mail->Subject  = "Formulário de Contato"; // Assunto da mensagem
- $mail->Body .= " Nome: ".$_POST['name']."
-"; // Texto da mensagem
- $mail->Body .= " E-mail: ".$_POST['email']."
-"; // Texto da mensagem
- $mail->Body .= " Assunto: ".$_POST['subject']."
-"; // Texto da mensagem
- $mail->Body .= " Mensagem: ".nl2br($_POST['message+'])."
-"; // Texto da mensagem
+ $mail->Body .= " Nome: "+$_POST['name']+""; // Texto da mensagem
+ $mail->Body .= " E-mail: ".$_POST['email'].""; // Texto da mensagem
+ $mail->Body .= " Assunto: ".$_POST['subject'].""; // Texto da mensagem
+ $mail->Body .= " Mensagem: ".nl2br($_POST['message+']).""; // Texto da mensagem
  // ENVIO DO EMAIL
  $enviado = $mail->Send();
  // Limpa os destinatários e os anexos
