@@ -17,7 +17,7 @@
  $mail->From = "comercial@smcortinasepersianas.com.br"; // Sua conta de email que será remetente da mensagem
  $mail->FromName = "Conta Comercial SM Cortinas e Persianas"; // Nome da conta de email
  // DADOS DO DESTINATÁRIO
- $mail->AddAddress('arthursoares.comercial@gmail.com', 'Nome - Recebe1'); // Define qual conta de email receberá a mensagem
+ $mail->AddAddress('formweb@smcortinasepersianas.com.br', 'Nome - Recebe1'); // Define qual conta de email receberá a mensagem
  //$mail->AddAddress('recebe2@dominio.com.br'); // Define qual conta de email receberá a mensagem
  //$mail->AddCC('copia@dominio.net'); // Define qual conta de email receberá uma cópia
  //$mail->AddBCC('copiaoculta@dominio.info'); // Define qual conta de email receberá uma cópia oculta
@@ -25,10 +25,11 @@
  $mail->IsHTML(true); // Define que o e-mail será enviado como HTML
  $mail->CharSet = 'utf-8'; // Charset da mensagem (opcional)
  // DEFINIÇÃO DA MENSAGEM
+ $email = $_POST['email'];
  $mail->Subject  = "Formulário de Contato"; // Assunto da mensagem
- $mail->Body = " Nome: ".$_POST['name']." <br>"; // Texto da mensagem
+ $mail->Body = $_POST['name'] ; //." <br>"; // Texto da mensagem
  $mail->Body .= " E-mail: ".$_POST['email'].""; // Texto da mensagem
- $mail->Body .= " Assunto: ".$_POST['subject'].""; // Texto da mensagem
+ $mail->Body .= $mail." Assunto: ".$_POST['subject'].""; // Texto da mensagem
  $mail->Body .= " Mensagem: ".nl2br($_POST['message+']).""; // Texto da mensagem
  // ENVIO DO EMAIL
  $enviado = $mail->Send();
