@@ -22,7 +22,7 @@ $headers[] = "Subject: {$subject}";
 $headers[] = "X-Mailer: PHP/".phpversion();
 
 $headers = implode("\r\n", $headers);z
-mail($to, $subject, $message+" /n Telefone: "+$tel, $headers);
+mail($to, $subject, $message+'/n Telefone: '+$tel, $headers);
 
 die;
 ?>
