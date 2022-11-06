@@ -786,7 +786,7 @@
                 <div class="form-group">
                   <div class="g-recaptcha"  id="rcaptcha"  data-callback="get_action" data-sitekey="6LewBuQiAAAAAOWpodDQjUdMLIz8RGrP1O2rHMzI"></div>
                   <span id="captcha" style="color:red"></span> 
-                  <button type="submit" class="btn-submit" >Enviar</button>
+                  <button it="btn-envio" type="submit" class="btn-submit" style="background-color: black;" onClick="validaCaptcha()"disabled="disabled"> Enviar</button>
                 </div>
               </form>  
             </div>
@@ -852,7 +852,10 @@
     </a>
   </footer>
 
-  <script>function mascaraDeTelefone(telefone){
+  <script>
+  const button = document.getElementById('btn-envio');
+
+  function mascaraDeTelefone(telefone){
     const textoAtual = telefone.value;
     const isCelular = textoAtual.length === 11;
     let textoAjustado;
@@ -887,8 +890,13 @@
     else
     {
         document.getElementById('captcha').innerHTML="Captcha completed";
+        button.disabled = false;
+        button.style.background=""
         return true; 
     }
+  }
+  function validaCaptcha(){
+    alert("formulario enviado, obrigado!");
   }
   </script>
   <script type="text/javascript" src="js/jquery.js"></script>
