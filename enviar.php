@@ -17,9 +17,9 @@
  $mail->From = "comercial@smcortinasepersianas.com.br"; // Sua conta de email que será remetente da mensagem
  $mail->FromName = "Conta Comercial SM Cortinas e Persianas"; // Nome da conta de email
  // DADOS DO DESTINATÁRIO
- $mail->AddAddress('formweb@smcortinasepersianas.com.br', 'Nome - Recebe1'); // Define qual conta de email receberá a mensagem
+ $mail->AddAddress('formweb@smcortinasepersianas.com.br', 'Comercial'); // Define qual conta de email receberá a mensagem
  //$mail->AddAddress('recebe2@dominio.com.br'); // Define qual conta de email receberá a mensagem
- $mail->AddCC($_POST['email']); // Define qual conta de email receberá uma cópia
+ //$mail->AddCC($_POST['email']); // Define qual conta de email receberá uma cópia
  //$mail->AddBCC('copiaoculta@dominio.info'); // Define qual conta de email receberá uma cópia oculta
  // Definição de HTML/codificação
  $mail->IsHTML(true); // Define que o e-mail será enviado como HTML
@@ -37,6 +37,9 @@
  $mail->ClearAllRecipients();
  // Exibe uma mensagem de resultado do envio (sucesso/erro)
  if ($enviado) {
+  $mail->AddAddress($_POST['email'],$_POST['name'] );
+  $mail->Body = " Email recebido, em breve entraremos em contato"; //." <br>"; // Texto da mensagem
+  $mail->Send();
    //echo "E-mail enviado com sucesso!";
    header('Location: https://www.smcortinasepersianas.com.br/');
  } else {
