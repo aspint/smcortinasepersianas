@@ -26,13 +26,13 @@
  $mail->CharSet = 'utf-8'; // Charset da mensagem (opcional)
  // DEFINIÇÃO DA MENSAGEM
  $mail->Subject  = "Formulário de Contato"; // Assunto da mensagem
- $mail->Body .= " Nome: ".$_POST['nome']."
+ $mail->Body .= " Nome: ".$_POST['name']."
 "; // Texto da mensagem
  $mail->Body .= " E-mail: ".$_POST['email']."
 "; // Texto da mensagem
- $mail->Body .= " Assunto: ".$_POST['assunto']."
+ $mail->Body .= " Assunto: ".$_POST['subject']."
 "; // Texto da mensagem
- $mail->Body .= " Mensagem: ".nl2br($_POST['mensagem'])."
+ $mail->Body .= " Mensagem: ".nl2br($_POST['message'])."
 "; // Texto da mensagem
  // ENVIO DO EMAIL
  $enviado = $mail->Send();
