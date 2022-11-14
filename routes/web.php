@@ -13,9 +13,8 @@
 |
 */
 
-// $router->get('/', function () use ($router) {
-//     return $router->app->version();
-// });
-    $router->get('/', function () use ($router) {
-         return view('main/index');
-    });
+$router->get('/', function () use ($router) {
+     return view('main/index');
+});
+
+$router->post('enviar', 'EnviaEmail@enviaEmail');
